@@ -11,6 +11,10 @@ repositories {
     mavenCentral()
 }
 
+dependencyLocking {
+    lockAllConfigurations()
+}
+
 dependencies {
     // Vulnerable dependency for testing - Log4j 2.14.1 has CVE-2021-44228 (Log4Shell)
     implementation 'org.apache.logging.log4j:log4j-core:2.14.1'
