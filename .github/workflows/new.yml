@@ -1,0 +1,55 @@
+name: Generate SBOM using npx cdxgen
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  sbom:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install cdxgen (local)
+        run: npm install @cyclonedx/cdxgen --no-save --no-audit --no-fund
+
+      - name: Create output directory
+        run: mkdir -p artifacts/sbom
+
+      - name: Generate SBOM - JSON
+        run: |
+          npx cdxgen \
+            --no-install-deps \
+            -r \
+            -o artifacts/sbom/bom.json \
+            .
+
+      - name: Generate SBOM - XML
+        run: |
+          npx cdxgen \
+            --no-install-deps \
+            -r \
+            -f xml \
+            -o artifacts/sbom/bom.xml \
+            .
+
+      - name: List generated files
+        run: ls -l artifacts/sbom
+
+      - name: Upload SBOM artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: artifacts/sbom

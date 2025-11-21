@@ -1,0 +1,442 @@
+{
+    "bomFormat": "CycloneDX",
+    "specVersion": "1.6",
+    "serialNumber": "urn:uuid:3cbb25bc-61be-47de-b8fd-f2d8acd511bf",
+    "version": 1,
+    "metadata": {
+        "timestamp": "2025-11-21T11:06:42Z",
+        "tools": {
+            "components": [
+                {
+                    "group": "@cyclonedx",
+                    "name": "cdxgen",
+                    "version": "11.11.0",
+                    "purl": "pkg:npm/%40cyclonedx/cdxgen@11.11.0",
+                    "type": "application",
+                    "bom-ref": "pkg:npm/@cyclonedx/cdxgen@11.11.0",
+                    "publisher": "OWASP Foundation",
+                    "authors": [
+                        {
+                            "name": "OWASP Foundation"
+                        }
+                    ]
+                }
+            ]
+        },
+        "authors": [
+            {
+                "name": "OWASP Foundation"
+            }
+        ],
+        "lifecycles": [
+            {
+                "phase": "build"
+            }
+        ],
+        "component": {
+            "name": "test-java-dependency-issues",
+            "type": "application",
+            "group": "com.example",
+            "version": "1.0.0",
+            "properties": [
+                {
+                    "name": "GradleModule",
+                    "value": "test-java-dependency-issues"
+                },
+                {
+                    "name": "buildFile",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo\\build.gradle"
+                },
+                {
+                    "name": "projectDir",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                },
+                {
+                    "name": "rootDir",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "purl": "pkg:maven/com.example/test-java-dependency-issues@1.0.0?type=jar",
+            "bom-ref": "pkg:maven/com.example/test-java-dependency-issues@1.0.0?type=jar",
+            "components": [
+                {
+                    "group": "",
+                    "name": "test_java_dependency_issues_repo",
+                    "version": "latest",
+                    "purl": "pkg:maven/test_java_dependency_issues_repo@latest",
+                    "type": "application",
+                    "bom-ref": "pkg:maven/test_java_dependency_issues_repo@latest"
+                }
+            ]
+        },
+        "properties": [
+            {
+                "name": "cdx:bom:componentTypes",
+                "value": "maven"
+            },
+            {
+                "name": "cdx:bom:componentNamespaces",
+                "value": "gradle-wrapper\\nio.netty\\norg.apache.logging.log4j\\norg.apiguardian\\norg.junit\\norg.junit.jupiter\\norg.junit.platform\\norg.opentest4j"
+            },
+            {
+                "name": "cdx:bom:componentSrcFiles",
+                "value": "gradle-wrapper.jar\\njar-deps-x6pTM2\\gradle-wrapper.jar"
+            }
+        ]
+    },
+    "components": [
+        {
+            "group": "org.apache.logging.log4j",
+            "name": "log4j-core",
+            "version": "2.14.1",
+            "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1?type=jar",
+            "type": "framework",
+            "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "compileClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "org.apache.logging.log4j",
+            "name": "log4j-api",
+            "version": "2.14.1",
+            "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1?type=jar",
+            "type": "framework",
+            "bom-ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "compileClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "tags": [
+                "framework"
+            ]
+        },
+        {
+            "group": "io.netty",
+            "name": "netty-tcnative-boringssl-static",
+            "version": "2.0.20.Final",
+            "purl": "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.20.Final?type=jar",
+            "type": "framework",
+            "bom-ref": "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.20.Final?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "compileClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "tags": [
+                "framework",
+                "native",
+                "security"
+            ]
+        },
+        {
+            "group": "org.junit.jupiter",
+            "name": "junit-jupiter-api",
+            "version": "5.8.2",
+            "scope": "optional",
+            "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=jar",
+            "type": "library",
+            "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "testCompileClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "tags": [
+                "test"
+            ]
+        },
+        {
+            "group": "org.junit",
+            "name": "junit-bom",
+            "version": "5.8.2",
+            "scope": "optional",
+            "purl": "pkg:maven/org.junit/junit-bom@5.8.2?type=jar",
+            "type": "library",
+            "bom-ref": "pkg:maven/org.junit/junit-bom@5.8.2?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "testCompileClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "tags": [
+                "test"
+            ]
+        },
+        {
+            "group": "org.junit.platform",
+            "name": "junit-platform-commons",
+            "version": "1.8.2",
+            "scope": "optional",
+            "purl": "pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=jar",
+            "type": "library",
+            "bom-ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "testCompileClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "tags": [
+                "test"
+            ]
+        },
+        {
+            "group": "org.opentest4j",
+            "name": "opentest4j",
+            "version": "1.2.0",
+            "scope": "optional",
+            "purl": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+            "type": "library",
+            "bom-ref": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "testCompileClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "tags": [
+                "test"
+            ]
+        },
+        {
+            "group": "org.apiguardian",
+            "name": "apiguardian-api",
+            "version": "1.1.2",
+            "scope": "optional",
+            "purl": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+            "type": "library",
+            "bom-ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "testCompileClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ]
+        },
+        {
+            "group": "org.junit.jupiter",
+            "name": "junit-jupiter-engine",
+            "version": "5.8.2",
+            "scope": "optional",
+            "purl": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.8.2?type=jar",
+            "type": "library",
+            "bom-ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.8.2?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "testRuntimeClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "tags": [
+                "test"
+            ]
+        },
+        {
+            "group": "org.junit.platform",
+            "name": "junit-platform-engine",
+            "version": "1.8.2",
+            "scope": "optional",
+            "purl": "pkg:maven/org.junit.platform/junit-platform-engine@1.8.2?type=jar",
+            "type": "library",
+            "bom-ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.8.2?type=jar",
+            "properties": [
+                {
+                    "name": "GradleProfileName",
+                    "value": "testRuntimeClasspath"
+                },
+                {
+                    "name": "cdx:gradle:GradleRootPath",
+                    "value": "C:\\Users\\Thribhuvana.T\\Workspace\\srm-test-project\\test_java_dependency_issues_repo"
+                }
+            ],
+            "tags": [
+                "test"
+            ]
+        },
+        {
+            "group": "gradle-wrapper",
+            "name": "gradle-wrapper",
+            "version": "",
+            "purl": "pkg:maven/gradle-wrapper/gradle-wrapper?type=jar",
+            "type": "library",
+            "bom-ref": "pkg:maven/gradle-wrapper/gradle-wrapper?type=jar",
+            "properties": [
+                {
+                    "name": "SrcFile",
+                    "value": "jar-deps-x6pTM2\\gradle-wrapper.jar"
+                },
+                {
+                    "name": "Namespaces",
+                    "value": "org.gradle.cli.CommandLineArgumentException\norg.gradle.cli.CommandLineOption\norg.gradle.cli.CommandLineParser$AfterOptions\norg.gradle.cli.CommandLineParser$BeforeFirstSubCommand\norg.gradle.cli.CommandLineParser$KnownOptionParserState\norg.gradle.cli.CommandLineParser$MissingOptionArgState\norg.gradle.cli.CommandLineParser$OptionAwareParserState\norg.gradle.cli.CommandLineParser$OptionParserState\norg.gradle.cli.CommandLineParser$OptionString\norg.gradle.cli.CommandLineParser$ParserState\norg.gradle.cli.CommandLineParser$UnknownOptionParserState\norg.gradle.cli.CommandLineParser\norg.gradle.cli.ParsedCommandLine\norg.gradle.cli.ParsedCommandLineOption\norg.gradle.internal.file.PathTraversalChecker\norg.gradle.internal.file.locking.ExclusiveFileAccessManager\norg.gradle.util.internal.WrapperDistributionUrlConverter\norg.gradle.wrapper.BootstrapMainStarter$1\norg.gradle.wrapper.Download$DefaultDownloadProgressListener\norg.gradle.wrapper.Download$ProxyAuthenticator\norg.gradle.wrapper.Download\norg.gradle.wrapper.GradleUserHomeLookup\norg.gradle.wrapper.GradleWrapperMain\norg.gradle.wrapper.Install$1\norg.gradle.wrapper.Install$InstallCheck\norg.gradle.wrapper.Install\norg.gradle.wrapper.Logger\norg.gradle.wrapper.PathAssembler\norg.gradle.wrapper.SystemPropertiesHandler\norg.gradle.wrapper.WrapperConfiguration\norg.gradle.wrapper.WrapperExecutor"
+                }
+            ],
+            "evidence": {
+                "identity": [
+                    {
+                        "field": "purl",
+                        "confidence": 0,
+                        "methods": [
+                            {
+                                "technique": "filename",
+                                "confidence": 0,
+                                "value": "gradle-wrapper.jar"
+                            }
+                        ],
+                        "concludedValue": "gradle-wrapper.jar"
+                    }
+                ]
+            }
+        }
+    ],
+    "services": [],
+    "dependencies": [
+        {
+            "ref": "pkg:maven/com.example/test-java-dependency-issues@1.0.0?type=jar",
+            "dependsOn": [
+                "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.20.Final?type=jar",
+                "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1?type=jar",
+                "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1?type=jar",
+                "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=jar",
+                "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.8.2?type=jar",
+                "pkg:maven/test_java_dependency_issues_repo@latest"
+            ]
+        },
+        {
+            "ref": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1?type=jar",
+            "dependsOn": [
+                "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1?type=jar"
+            ]
+        },
+        {
+            "ref": "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1?type=jar",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:maven/io.netty/netty-tcnative-boringssl-static@2.0.20.Final?type=jar",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=jar",
+            "dependsOn": [
+                "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+                "pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=jar",
+                "pkg:maven/org.junit/junit-bom@5.8.2?type=jar",
+                "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"
+            ]
+        },
+        {
+            "ref": "pkg:maven/org.junit/junit-bom@5.8.2?type=jar",
+            "dependsOn": [
+                "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=jar",
+                "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.8.2?type=jar",
+                "pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=jar",
+                "pkg:maven/org.junit.platform/junit-platform-engine@1.8.2?type=jar"
+            ]
+        },
+        {
+            "ref": "pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=jar",
+            "dependsOn": [
+                "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+                "pkg:maven/org.junit/junit-bom@5.8.2?type=jar"
+            ]
+        },
+        {
+            "ref": "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:maven/org.apiguardian/apiguardian-api@1.1.2?type=jar",
+            "dependsOn": []
+        },
+        {
+            "ref": "pkg:maven/org.junit.jupiter/junit-jupiter-engine@5.8.2?type=jar",
+            "dependsOn": [
+                "pkg:maven/org.junit.jupiter/junit-jupiter-api@5.8.2?type=jar",
+                "pkg:maven/org.junit.platform/junit-platform-engine@1.8.2?type=jar",
+                "pkg:maven/org.junit/junit-bom@5.8.2?type=jar"
+            ]
+        },
+        {
+            "ref": "pkg:maven/org.junit.platform/junit-platform-engine@1.8.2?type=jar",
+            "dependsOn": [
+                "pkg:maven/org.junit.platform/junit-platform-commons@1.8.2?type=jar",
+                "pkg:maven/org.junit/junit-bom@5.8.2?type=jar",
+                "pkg:maven/org.opentest4j/opentest4j@1.2.0?type=jar"
+            ]
+        }
+    ],
+    "annotations": [
+        {
+            "bom-ref": "metadata-annotations",
+            "subjects": [
+                "pkg:maven/com.example/test-java-dependency-issues@1.0.0?type=jar"
+            ],
+            "annotator": {
+                "component": {
+                    "group": "@cyclonedx",
+                    "name": "cdxgen",
+                    "version": "11.11.0",
+                    "purl": "pkg:npm/%40cyclonedx/cdxgen@11.11.0",
+                    "type": "application",
+                    "bom-ref": "pkg:npm/@cyclonedx/cdxgen@11.11.0",
+                    "publisher": "OWASP Foundation",
+                    "authors": [
+                        {
+                            "name": "OWASP Foundation"
+                        }
+                    ]
+                }
+            },
+            "timestamp": "2025-11-21T11:06:42Z",
+            "text": "This Software Bill-of-Materials (SBOM) document was created on Friday, November 21, 2025 with cdxgen. The data was captured during the build lifecycle phase. The document describes an application named 'test-java-dependency-issues' with version '1.0.0'. The application also has 1 child modules/components. There are 11 components. The package type in this SBOM is maven with 8 purl namespaces described under components. The components were identified from the source files: gradle-wrapper.jar, jar-deps-x6pTM2\\gradle-wrapper.jar."
+        }
+    ]
+}
